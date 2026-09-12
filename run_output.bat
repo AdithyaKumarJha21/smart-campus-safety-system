@@ -50,7 +50,7 @@ echo Sequence model: %SEQUENCE_MODEL%
 echo Max frames: %MAX_FRAMES%
 echo.
 
-"C:\Users\adith\AppData\Local\SmartCampusRuntime\Scripts\python.exe" .\src\predict.py --video "%SOURCE%" --sequence-model "%SEQUENCE_MODEL%" --max-frames %MAX_FRAMES% --no-show
+python .\src\predict.py --video "%SOURCE%" --sequence-model "%SEQUENCE_MODEL%" --max-frames %MAX_FRAMES% --no-show
 
 if errorlevel 1 (
     echo.

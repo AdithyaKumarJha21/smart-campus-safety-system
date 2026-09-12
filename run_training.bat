@@ -1,11 +1,11 @@
 @echo off
 echo Rebuilding pose sequences from the UR dataset...
-"C:\Users\adith\AppData\Local\SmartCampusRuntime\Scripts\python.exe" src\data\process_ur_dataset.py
+python src\data\process_ur_dataset.py
 if errorlevel 1 goto failed
 
 echo.
 echo Training the BiLSTM model...
-"C:\Users\adith\AppData\Local\SmartCampusRuntime\Scripts\python.exe" src\models\train_real_data.py
+python src\models\train_real_data.py
 if errorlevel 1 goto failed
 
 echo.
