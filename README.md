@@ -68,7 +68,9 @@ A file picker opens. Select a video file (`.mp4`, `.avi`, `.mov`, `.mkv`). Resul
   --video data\processed\ur_fall_dataset ^
   --max-frames 180
 ```
+## 📸 Example Output
 
+![alt text](<Screenshot 2026-09-10 225347.png>)
 ### First Time Using It
 
 1. After installation, run the interactive file picker command above
