@@ -79,30 +79,32 @@ A file picker opens. Select a video file (`.mp4`, `.avi`, `.mov`, `.mkv`). Resul
 6. When processing completes, annotated output and alert logs are generated in a local `outputs/` directory
 
 ### Model Output Classes
-Fall Detected (high priority)
-FALL RISK (early warning, medium priority)
-Normal Activity (low priority)
-Intrusion Detected (high priority)
 
+| Event | Priority | Description |
+|-------|----------|-------------|
+| Fall Detected | High | Confirmed fall detected |
+| FALL RISK | Medium | Early warning before impact |
+| Normal Activity | Low | No threat detected |
+| Intrusion Detected | High | Unauthorized person detected |
 
 ## 📁 Project Structure
 
+```
 smart-campus-safety-system/
 ├── README.md
-├── run_output.bat
-├── run_training.bat
-├── run_visual_demo.bat
+├── requirements.txt
 ├── .gitignore
 ├── data/
-│ └── processed/
-│ └── ur_fall_dataset/
+│   └── processed/
+│       └── ur_fall_dataset/
 ├── models/
-│ ├── BiLSTM_best.keras
-│ └── sequence_normalization.npz
+│   ├── BiLSTM_best.keras
+│   └── sequence_normalization.npz
 └── src/
-├── predict.py
-├── data/
-│ └── process_ur_dataset.py
-└── models/
-├── baseline_models.py
-└── train_real_data.py
+    ├── predict.py
+    ├── data/
+    │   └── process_ur_dataset.py
+    └── models/
+        ├── baseline_models.py
+        └── train_real_data.py
+```
