@@ -72,8 +72,9 @@ A file picker opens. Select a video file (`.mp4`, `.avi`, `.mov`, `.mkv`). Resul
 
 ![alt text](<Screenshot 2026-09-12 145402.png>)
 
-Output 2
+### Output2
 ![alt text](<Screenshot 2026-09-10 225444.png>)
+
 ### First Time Using It
 
 1. After installation, run the interactive file picker command above
